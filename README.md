@@ -84,7 +84,7 @@
            <div class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
                <div class="md:w-1/2">
                    <!-- Foto da Juliana Carvalho -->
-                   <img src="https://storage.googleapis.com/g-c-a-r-a-p-a-c-e/236f0144-8d96-419b-a010-0966a2f4c3a5" alt="Retrato de Juliana Carvalho" class="w-full h-auto rounded-lg shadow-lg">
+                   <img src="https://media.licdn.com/dms/image/v2/D4D03AQGGwQh8KbeMIA/profile-displayphoto-crop_800_800/B4DZlYBGlzHsAI-/0/1758118308872?e=1761177600&v=beta&t=5n3fUGLWAyZgtGz5G34bN2Se47kVW_oYyIzL1GIDz84">
                </div>
                <div class="md:w-1/2">
                    <h2 class="font-playfair text-3xl font-bold text-gray-800 mb-4">
