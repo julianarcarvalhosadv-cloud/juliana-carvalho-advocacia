@@ -1,10 +1,3 @@
-crie o arquivo para baixar
-
-Vou criar o arquivo HTML com o código que você enviou para que possa baixar.
-
-Aqui está o conteúdo do arquivo chamado `index.html` para download. Depois de salvar este conteúdo em um arquivo com esse nome, o site funcionará conforme esperado.
-
-```html
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
