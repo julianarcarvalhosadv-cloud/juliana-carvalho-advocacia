@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Juliana Carvalho Advocacia & Consultoria</title>
+   <script src="https://cdn.tailwindcss.com"></script>
+   <style>
+       @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap');
+       body {
+           font-family: 'Inter', sans-serif;
+           color: #4b5563;
+       }
+       .text-darkred {
+           color: #58181F; /* Vermelho bordô escuro */
+       }
+       .bg-darkred {
+           background-color: #58181F;
+       }
+       .border-darkred {
+           border-color: #58181F;
+       }
+       .text-graybeige {
+           color: #ECEAE6; /* Bege acinzentado mais claro */
+       }
+       .bg-graybeige {
+           background-color: #ECEAE6;
+       }
+       .hover\:bg-darkred:hover {
+           background-color: #58181F;
+       }
+       .font-playfair {
+           font-family: 'Playfair Display', serif;
+       }
+   </style>
+</head>
+<body class="bg-white">
+
+   <!-- Navbar -->
+   <header class="bg-white shadow-sm sticky top-0 z-50">
+       <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+           <a href="#" class="flex items-center space-x-2">
+               <span class="font-playfair text-xl sm:text-2xl font-bold text-gray-800">Juliana Carvalho</span>
+               <span class="text-sm sm:text-lg font-light text-darkred hidden sm:block">Advocacia & Consultoria</span>
+           </a>
+           <div class="hidden md:flex space-x-8">
+               <a href="#about" class="text-gray-600 hover:text-darkred transition duration-300">Sobre Nós</a>
+               <a href="#services" class="text-gray-600 hover:text-darkred transition duration-300">Serviços</a>
+               <a href="#contact" class="text-gray-600 hover:text-darkred transition duration-300">Contato</a>
+           </div>
+           <!-- Mobile Menu Button -->
+           <button id="mobile-menu-button" class="md:hidden focus:outline-none">
+               <svg class="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+               </svg>
+           </button>
+       </nav>
+       <!-- Mobile Menu -->
+       <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg py-2">
+           <a href="#about" class="block px-6 py-2 text-gray-600 hover:bg-gray-100">Sobre Nós</a>
+           <a href="#services" class="block px-6 py-2 text-gray-600 hover:bg-gray-100">Serviços</a>
+           <a href="#contact" class="block px-6 py-2 text-gray-600 hover:bg-gray-100">Contato</a>
+       </div>
+   </header>
+
+   <main>
+       <!-- Hero Section -->
+       <section class="relative bg-graybeige py-20 md:py-32">
+           <div class="container mx-auto px-6 text-center">
+               <h1 class="font-playfair text-4xl sm:text-5xl md:text-6xl font-bold text-darkred leading-tight mb-4">
+                   Excelência e Confiança
+               </h1>
+               <p class="text-gray-600 text-lg md:text-xl max-w-2xl mx-auto mb-8">
+                   Soluções jurídicas personalizadas, baseadas em ética e comprometimento com nossos clientes.
+               </p>
+               <a href="#contact" class="inline-block px-8 py-3 rounded-full bg-darkred text-graybeige font-semibold shadow-md hover:bg-opacity-90 transition duration-300">
+                   Agende uma Consulta
+               </a>
+           </div>
+       </section>
+
+       <!-- About Section -->
+       <section id="about" class="py-16 md:py-24">
+           <div class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
+               <div class="md:w-1/2">
+                   <!-- Foto da Juliana Carvalho -->
+                   <img src="https://storage.googleapis.com/g-c-a-r-a-p-a-c-e/236f0144-8d96-419b-a010-0966a2f4c3a5" alt="Retrato de Juliana Carvalho" class="w-full h-auto rounded-lg shadow-lg">
+               </div>
+               <div class="md:w-1/2">
+                   <h2 class="font-playfair text-3xl font-bold text-gray-800 mb-4">
+                       Nossa Missão
+                   </h2>
+                   <p class="text-gray-600 mb-4">
+                       O escritório Juliana Carvalho Advocacia & Consultoria é pautado pela ética, transparência e dedicação. Acreditamos que cada cliente é único e merece uma abordagem personalizada para suas necessidades legais. Nossa missão é oferecer um serviço de excelência, buscando sempre a melhor solução para os desafios apresentados.
+                   </p>
+                   <p class="text-gray-600">
+                       Com anos de experiência em diversas áreas do direito, nossa equipe está pronta para atendê-lo com profissionalismo e humanidade.
+                   </p>
+               </div>
+           </div>
+       </section>
+
+       <!-- Services Section -->
+       <section id="services" class="bg-graybeige py-16 md:py-24">
+           <div class="container mx-auto px-6 text-center">
+               <h2 class="font-playfair text-3xl font-bold text-gray-800 mb-10">Áreas de Atuação</h2>
+               <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                   <!-- Service 1 -->
+                   <div class="bg-white p-8 rounded-lg shadow-md border border-gray-200 hover:shadow-xl transition-shadow duration-300">
+                       <h3 class="font-playfair text-2xl font-semibold text-gray-800 mb-2">Direito Tributário</h3>
+                       <p class="text-gray-600">
+                           Consultoria e planejamento fiscal, defesa em autuações e recuperação de tributos.
+                       </p>
+                   </div>
+                   <!-- Service 2 -->
+                   <div class="bg-white p-8 rounded-lg shadow-md border border-gray-200 hover:shadow-xl transition-shadow duration-300">
+                       <h3 class="font-playfair text-2xl font-semibold text-gray-800 mb-2">Direito do Consumidor</h3>
+                       <p class="text-gray-600">
+                           Defesa dos direitos do consumidor em transações comerciais e serviços.
+                       </p>
+                   </div>
+                   <!-- Service 3 -->
+                   <div class="bg-white p-8 rounded-lg shadow-md border border-gray-200 hover:shadow-xl transition-shadow duration-300">
+                       <h3 class="font-playfair text-2xl font-semibold text-gray-800 mb-2">Direito da Educação</h3>
+                       <p class="text-gray-600">
+                           Questões acadêmicas, renegociação de mensalidades, defesa de direitos de alunos.
+                       </p>
+                   </div>
+                   <!-- Service 4 -->
+                   <div class="bg-white p-8 rounded-lg shadow-md border border-gray-200 hover:shadow-xl transition-shadow duration-300">
+                       <h3 class="font-playfair text-2xl font-semibold text-gray-800 mb-2">Direito da Saúde</h3>
+                       <p class="text-gray-600">
+                           Acesso a tratamentos, planos de saúde, direitos de pacientes e responsabilidade médica.
+                       </p>
+                   </div>
+                   <!-- Service 5 -->
+                   <div class="bg-white p-8 rounded-lg shadow-md border border-gray-200 hover:shadow-xl transition-shadow duration-300">
+                       <h3 class="font-playfair text-2xl font-semibold text-gray-800 mb-2">Direito Previdenciário</h3>
+                       <p class="text-gray-600">
+                           Aposentadorias, auxílios, pensões e revisões de benefícios.
+                       </p>
+                   </div>
+                   <!-- Service 6 -->
+                   <div class="bg-white p-8 rounded-lg shadow-md border border-gray-200 hover:shadow-xl transition-shadow duration-300">
+                       <h3 class="font-playfair text-2xl font-semibold text-gray-800 mb-2">Direito Civil</h3>
+                       <p class="text-gray-600">
+                           Resolução de conflitos, contratos, responsabilidade civil, família e sucessões.
+                       </p>
+                   </div>
+               </div>
+           </div>
+       </section>
+
+       <!-- Contact Section -->
+       <section id="contact" class="py-16 md:py-24">
+           <div class="container mx-auto px-6">
+               <div class="bg-graybeige rounded-lg p-8 shadow-lg">
+                   <h2 class="font-playfair text-3xl font-bold text-gray-800 text-center mb-6">Entre em Contato</h2>
+                   <p class="text-gray-600 text-center mb-8">
+                       Preencha o formulário abaixo para agendar uma consulta. Responderemos o mais breve possível.
+                   </p>
+                   <form action="#" method="POST" class="max-w-xl mx-auto space-y-4">
+                       <div>
+                           <label for="name" class="block text-sm font-medium text-gray-700">Nome Completo</label>
+                           <input type="text" id="name" name="name" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-darkred focus:ring focus:ring-darkred focus:ring-opacity-50">
+                       </div>
+                       <div>
+                           <label for="email" class="block text-sm font-medium text-gray-700">E-mail</label>
+                           <input type="email" id="email" name="email" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-darkred focus:ring focus:ring-darkred focus:ring-opacity-50">
+                       </div>
+                       <div>
+                           <label for="phone" class="block text-sm font-medium text-gray-700">Telefone (Opcional)</label>
+                           <input type="tel" id="phone" name="phone" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-darkred focus:ring focus:ring-darkred focus:ring-opacity-50">
+                       </div>
+                       <div>
+                           <label for="message" class="block text-sm font-medium text-gray-700">Mensagem</label>
+                           <textarea id="message" name="message" rows="4" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-darkred focus:ring focus:ring-darkred focus:ring-opacity-50"></textarea>
+                       </div>
+                       <div class="text-center">
+                           <button type="submit" class="inline-block px-8 py-3 rounded-full bg-darkred text-graybeige font-semibold shadow-md hover:bg-opacity-90 transition duration-300">
+                               Enviar Mensagem
+                           </button>
+                       </div>
+                   </form>
+                   <div class="text-center mt-8">
+                       <p class="text-gray-700 font-medium">Outras formas de contato:</p>
+                       <p class="text-gray-600 mt-2">
+                           Telefone: <a href="tel:+5571993114167" class="hover:underline text-darkred">71 993114167</a><br>
+                           E-mail: <a href="mailto:julianarcarvalhos.adv@gmail.com" class="hover:underline text-darkred">julianarcarvalhos.adv@gmail.com</a>
+                       </p>
+                   </div>
+               </div>
+           </div>
+       </section>
+
+   </main>
+
+   <!-- Footer -->
+   <footer class="bg-darkred text-graybeige py-8">
+       <div class="container mx-auto px-6 text-center">
+           <p>© 2023 Juliana Carvalho Advocacia & Consultoria. Todos os direitos reservados.</p>
+           <p class="text-sm mt-2">Telefone: 71 993114167 | E-mail: julianarcarvalhos.adv@gmail.com</p>
+       </div>
+   </footer>
+
+   <script>
+       document.getElementById('mobile-menu-button').addEventListener('click', function() {
+           const mobileMenu = document.getElementById('mobile-menu');
+           mobileMenu.classList.toggle('hidden');
+       });
+   </script>
+</body>
+</html>
